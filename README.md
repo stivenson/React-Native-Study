@@ -1,2 +1,2 @@
 # React-Native-Study
-Exercises
+Exercises for personal learning of React-Native
