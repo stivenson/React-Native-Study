@@ -15,15 +15,17 @@ export default class Animation extends Component {
   render() {
     let display = this.state.showText ? this.props.text : ' ';
     return (
-      <Text class={styles.animation}>{display}</Text>
+      <Text style={styleAnimation.content}>{display}</Text>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  animation: {
+const styleAnimation = StyleSheet.create({
+  content: {
     padding: 10,
     textAlign: 'center',
-    fontSize: 18
+    fontSize: 20,
+    color: 'blue',
+    fontWeight: 'bold',
   }
 });
