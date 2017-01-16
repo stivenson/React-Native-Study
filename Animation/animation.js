@@ -6,7 +6,7 @@ export default class Animation extends Component {
     super(props);
     this.state = {showText: true};
 
-    // Toggle the state every second
+
     setInterval(() => {
       this.setState({ showText: !this.state.showText });
     }, this.props.seconds);
