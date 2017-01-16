@@ -27,5 +27,10 @@ const styleAnimation = StyleSheet.create({
     fontSize: 20,
     color: 'blue',
     fontWeight: 'bold',
+    borderRadius: 4, 
+    borderWidth: 0.5, 
+    borderColor: '#d6d7da',
+    backgroundColor: '#e5e5e5',
+    margin: 10,
   }
 });
