@@ -1,4 +1,4 @@
-package com.scrollview;
+package com.scrollexample1;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "ScrollView";
+        return "ScrollExample1";
     }
 }
