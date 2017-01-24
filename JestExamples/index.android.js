@@ -9,8 +9,10 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  View // omit Button for test
+} from 'react-native'; 
+
+const divForZero = () => 0 / 3; // Action onPress not run in test
 
 export default class JestExamples extends Component {
   render() {
@@ -26,6 +28,10 @@ export default class JestExamples extends Component {
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
+        <Button  
+            onPress={divForZero} 
+            title="División por cero" 
+            accessibilityLabel="Division cero" />
       </View>
     );
   }
@@ -50,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('JestExamples', () => JestExamples);
+AppRegistry.registerComponent('JestExamples', () => JestExamples); // Run npm test
