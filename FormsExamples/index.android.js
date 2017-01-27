@@ -49,7 +49,7 @@ export class FormsExamples extends Component{
  
   }
   render(){
-    return (<ScrollView keyboardShouldPersistTaps={true} style={{paddingLeft:10,paddingRight:10, height:200}}>
+    return (<ScrollView keyboardShouldPersistTaps="always" style={{paddingLeft:10,paddingRight:10, height:200}}>
       <Form
         ref='registrationForm'
         onFocus={this.handleFormFocus.bind(this)}
