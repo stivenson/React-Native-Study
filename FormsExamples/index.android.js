@@ -56,7 +56,8 @@ export class FormsExamples extends Component{
         onChange={this.handleFormChange.bind(this)}
         label="Personal Information">
         <Separator />
-        <InputField
+        <InputField 
+          style={styles.custominput}
           ref='first_name'
           label='First Name'
           placeholder='First Name'
@@ -130,6 +131,11 @@ export class FormsExamples extends Component{
   }
 
 
+const styles = StyleSheet.create({
+    custominput: {
+        width: 120
+    }
+})
 
 
 AppRegistry.registerComponent('FormsExamples', () => FormsExamples);
